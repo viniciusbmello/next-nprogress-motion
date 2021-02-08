@@ -1,8 +1,9 @@
 import React from 'react'
 import Router from 'next/router'
-import Link from 'next/link'
 import NProgress from 'nprogress'
 import { ThemeProvider } from 'styled-components'
+
+import Header from '../components/header'
 
 import GlobalStyle from '../styles/global'
 import light from '../styles/themes/light'
@@ -15,19 +16,7 @@ const MyApp = ({ Component, pageProps }) => {
   return (
     <ThemeProvider theme={light}>
       <GlobalStyle />
-      <nav>
-        <style jsx>{`
-          a {
-            margin: 0 10px 0 0;
-          }
-        `}</style>
-        <Link href='/'>
-          <a>Home</a>
-        </Link>
-        <Link href='/about'>
-          <a>About</a>
-        </Link>
-      </nav>
+      <Header />
       <Component {...pageProps} />
     </ThemeProvider>
   )
