@@ -1,5 +1,7 @@
-export default function Home() {
+const Index = () => {
   return (
-    <h1>Hello World</h1>
+    <h1>Index</h1>
   )
 }
+
+export default Index
