@@ -3,22 +3,21 @@ import { motion } from 'framer-motion'
 
 const About = () => {
   return (
-    <motion.div
-      initial='hidden'
-      animate='visible'
-      variants={{
-        hidden: {
-          scale: 0.8,
-          opacity: 0
-        },
-        visible: {
-          scale: 1,
-          opacity: 1
-        }
-      }}
-    >
-      <h1>About</h1>
-    </motion.div>
+    <>
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+        style={{
+          position: 'fixed',
+          top: '50%',
+          left: '50%',
+          transform: 'translate(-50%, -50%)'
+        }}
+      >
+        <h1>About</h1>
+      </motion.div>
+    </>
   )
 }
 
