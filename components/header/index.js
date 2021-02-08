@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <Container>
       <div>
-        <h1>{'</>'} codar.studio</h1>
+        <h1>{'</>'}codar.studio</h1>
       </div>
       <div>
         <Link href='/'>
