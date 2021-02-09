@@ -1,9 +1,16 @@
 import React from 'react'
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 
 const Index = () => {
   return (
     <>
+      <Image
+        src='/images/indexBackground.webp'
+        alt='Hands'
+        layout='fill'
+        objectFit='cover'
+      />
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -15,7 +22,7 @@ const Index = () => {
           transform: 'translate(-50%, -50%)'
         }}
       >
-        <h1>Index</h1>
+        <h1 style={{ color: 'white' }}>Index</h1>
       </motion.div>
     </>
   )

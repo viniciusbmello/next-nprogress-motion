@@ -1,14 +1,16 @@
 import styled from 'styled-components'
 
 const Container = styled.div`
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 6rem;
 
-  background: ${(props) => props.theme.colors.primary};
+  background: black;
   color: ${(props) => props.theme.colors.background};
+
+  z-index: 998;
 
   #header-content {
     max-width: 120rem;
@@ -17,6 +19,7 @@ const Container = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-left: 1.4rem;
   }
 
   ul,
