@@ -8,7 +8,7 @@ const Container = styled.div`
   background: ${(props) => props.theme.colors.primary};
   color: ${(props) => props.theme.colors.background};
   z-index: 1;
-  padding: 0.6rem;
+  padding: 0 0.6rem;
 
   #header-content {
     margin: auto;
@@ -46,6 +46,7 @@ const Container = styled.div`
   .active a {
     color: ${(props) => props.theme.colors.secundary};
     border-bottom: 2px solid ${(props) => props.theme.colors.secundary};
+    margin-top: 2px;
   }
 `
 
