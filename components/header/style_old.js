@@ -5,48 +5,48 @@ const Container = styled.div`
   top: 0;
   left: 0;
   width: 100vw;
-  height: 6rem;
-
   background: ${(props) => props.theme.colors.primary};
   color: ${(props) => props.theme.colors.background};
+  z-index: 1;
+  padding: 0 0.6rem;
 
   #header-content {
-    max-width: 120rem;
-    height: 100%;
     margin: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    text-align: center;
+    max-width: 120rem;
   }
 
-  ul,
-  li {
-    display: inline;
-    list-style: none;
-    height: 100%;
-    display: flex;
-    align-items: center;
-  }
-
-  ul li {
-    width: 10rem;
+  #header-content:first-child {
+    padding-left: 0.4rem;
   }
 
   a {
-    margin: auto;
-    font: 400 1.4rem sans-serif;
+    display: inline-block;
+    font-size: 1.2rem;
+    padding: 1.4rem 0.6rem;
+    font-weight: 700;
     text-decoration: none;
-    padding: 0 1rem;
+    letter-spacing: 2px;
     color: ${(props) => props.theme.colors.background};
   }
 
-  a :hover {
+  h1 {
+    font-size: 2rem;
     color: ${(props) => props.theme.colors.secundary};
+    text-align: left;
   }
 
+  ul li {
+    display: inline;
+    list-style: none;
+  }
   .active a {
-    font: 700 1.4rem sans-serif;
     color: ${(props) => props.theme.colors.secundary};
+    border-bottom: 2px solid ${(props) => props.theme.colors.secundary};
+    margin-top: 2px;
   }
 `
 
