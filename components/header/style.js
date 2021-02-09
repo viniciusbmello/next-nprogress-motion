@@ -8,6 +8,7 @@ const Container = styled.div`
   background: ${(props) => props.theme.colors.primary};
   color: ${(props) => props.theme.colors.background};
   z-index: 1;
+  padding: 0.6rem;
 
   #header-content {
     margin: auto;
@@ -16,6 +17,10 @@ const Container = styled.div`
     justify-content: space-between;
     text-align: center;
     max-width: 120rem;
+  }
+
+  #header-content:first-child {
+    padding-left: 0.4rem;
   }
 
   a {
