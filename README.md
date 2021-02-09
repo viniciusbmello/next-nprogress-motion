@@ -1,6 +1,7 @@
 ## Sobre este Projeto
 
 Exemplo de Site em [React.js](https://reactjs.org/) seguindo boas práticas de programação.
+
 Estarei tentando manter este projeto sempre atualizado.
 
 ## Ferramentas Utilizadas
