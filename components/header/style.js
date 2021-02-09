@@ -38,6 +38,7 @@ const Container = styled.div`
     text-decoration: none;
     padding: 0 1rem;
     color: ${(props) => props.theme.colors.background};
+    transition: color 0.2s;
   }
 
   a :hover {
@@ -46,6 +47,10 @@ const Container = styled.div`
 
   .active a {
     font: 700 1.4rem sans-serif;
+    color: ${(props) => props.theme.colors.secundary};
+  }
+
+  h1 {
     color: ${(props) => props.theme.colors.secundary};
   }
 `
