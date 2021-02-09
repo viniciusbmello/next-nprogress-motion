@@ -4,17 +4,18 @@ import Image from 'next/image'
 
 const Index = () => {
   return (
-    <>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.5 }}
+    >
       <Image
         src='/images/indexBackground.webp'
         alt='Hands'
         layout='fill'
         objectFit='cover'
       />
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.2 }}
+      <div
         style={{
           position: 'fixed',
           top: '50%',
@@ -23,8 +24,8 @@ const Index = () => {
         }}
       >
         <h1 style={{ color: 'white' }}>Index</h1>
-      </motion.div>
-    </>
+      </div>
+    </motion.div>
   )
 }
 
