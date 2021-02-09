@@ -7,7 +7,6 @@ const Container = styled.div`
   width: 100vw;
   background: ${(props) => props.theme.colors.primary};
   color: ${(props) => props.theme.colors.background};
-  padding: 0.6rem;
   z-index: 1;
 
   #header-content {
@@ -21,12 +20,12 @@ const Container = styled.div`
 
   a {
     display: inline-block;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
+    padding: 1.4rem 0.6rem;
     font-weight: 700;
-    margin: 0 1rem;
     text-decoration: none;
+    letter-spacing: 2px;
     color: ${(props) => props.theme.colors.background};
-    transform: scale(1, 0.9);
   }
 
   h1 {
@@ -41,6 +40,7 @@ const Container = styled.div`
   }
   .active a {
     color: ${(props) => props.theme.colors.secundary};
+    border-bottom: 2px solid ${(props) => props.theme.colors.secundary};
   }
 `
 
