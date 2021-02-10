@@ -1,6 +1,5 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import Image from 'next/image'
 
 const Index = () => {
   return (
@@ -9,12 +8,6 @@ const Index = () => {
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
     >
-      <Image
-        src='/images/indexBackground.webp'
-        alt='Hands'
-        layout='fill'
-        objectFit='cover'
-      />
       <div
         style={{
           position: 'fixed',

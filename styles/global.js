@@ -26,10 +26,14 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background: ${(props) => props.theme.colors.background};
+    background: black;
     color: ${(props) => props.theme.colors.text};
     font-family: sans-serif;
   }
+
+  .container {
+    overflow: hidden;
+}
 `
 
 export default GlobalStyle

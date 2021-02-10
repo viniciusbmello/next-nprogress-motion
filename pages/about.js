@@ -14,7 +14,7 @@ const About = () => {
         transform: 'translate(-50%, -50%)'
       }}
     >
-      <h1>About</h1>
+      <h1 style={{ color: 'white' }}>About</h1>
     </motion.div>
   )
 }
