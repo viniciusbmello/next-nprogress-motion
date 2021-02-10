@@ -7,7 +7,6 @@ const Container = styled.div`
   width: 100vw;
   height: 6rem;
 
-  background: black;
   color: ${(props) => props.theme.colors.background};
 
   z-index: 998;

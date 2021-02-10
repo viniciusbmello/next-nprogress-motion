@@ -36,24 +36,24 @@ const MyApp = ({ Component, pageProps }) => {
             params={{
               particles: {
                 number: {
-                  value: 100,
+                  value: 200,
                   density: {
                     enable: true,
                     value_area: 1500
                   }
                 },
-                line_linked: {
-                  enable: true,
-                  opacity: 0.1
+                lineLinked: {
+                  enable: false,
+                  opacity: 0.2
                 },
                 size: {
-                  value: 1.5
+                  value: 1
                 },
                 opacity: {
                   anim: {
                     enable: true,
                     speed: 2,
-                    opacity_min: 0.05
+                    opacity_min: 0.1
                   }
                 }
               },
@@ -61,7 +61,16 @@ const MyApp = ({ Component, pageProps }) => {
                 events: {
                   onhover: {
                     enable: true,
-                    mode: 'repulse'
+                    mode: 'connect'
+                  }
+                },
+                modes: {
+                  connect: {
+                    distance: 100,
+                    radius: 150,
+                    links: {
+                      opacity: 0.1
+                    }
                   }
                 }
               },

@@ -26,7 +26,9 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background: black;
+    background: radial-gradient(at 50% 100%, rgba(32,32,32,1), black);
+    height: 100vh;
+    width: 100vw;
     color: ${(props) => props.theme.colors.text};
     font-family: sans-serif;
   }
