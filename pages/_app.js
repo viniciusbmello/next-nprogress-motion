@@ -35,42 +35,18 @@ const MyApp = ({ Component, pageProps }) => {
           <Particles
             params={{
               particles: {
-                number: {
-                  value: 200,
-                  density: {
-                    enable: true,
-                    value_area: 1500
-                  }
-                },
-                lineLinked: {
-                  enable: false,
-                  opacity: 0.2
-                },
-                size: {
-                  value: 1
-                },
-                opacity: {
-                  anim: {
-                    enable: true,
-                    speed: 2,
-                    opacity_min: 0.1
-                  }
-                }
+                number: { value: 200 },
+                lineLinked: { enable: false },
+                size: { value: 1 },
+                opacity: { anim: { enable: true, speed: 2, opacity_min: 0.1 } }
               },
               interactivity: {
-                events: {
-                  onhover: {
-                    enable: true,
-                    mode: 'connect'
-                  }
-                },
+                events: { onhover: { enable: true, mode: 'connect' } },
                 modes: {
                   connect: {
-                    distance: 100,
-                    radius: 150,
-                    links: {
-                      opacity: 0.1
-                    }
+                    distance: 120,
+                    radius: 180,
+                    links: { opacity: 0.05 }
                   }
                 }
               },

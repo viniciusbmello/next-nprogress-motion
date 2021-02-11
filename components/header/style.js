@@ -7,53 +7,74 @@ const Container = styled.div`
   width: 100vw;
   height: 6rem;
 
-  color: ${(props) => props.theme.colors.background};
+  display: flex;
+  align-items: center;
 
   z-index: 998;
 
-  #header-content {
-    max-width: 120rem;
+  nav {
     height: 100%;
+    max-width: 120rem;
     margin: auto;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding-left: 1.4rem;
   }
 
-  ul,
   li {
-    display: inline;
     list-style: none;
-    height: 100%;
-    display: flex;
-    align-items: center;
-  }
-
-  ul li {
-    width: 10rem;
   }
 
   a {
-    margin: auto;
     font: 400 1.4rem sans-serif;
+    color: white;
+    position: relative;
     text-decoration: none;
-    padding: 0 1rem;
-    color: ${(props) => props.theme.colors.background};
-    transition: color 0.2s;
-  }
-
-  a :hover {
-    color: ${(props) => props.theme.colors.secundary};
+    text-transform: uppercase;
+    padding: 1rem 4rem;
+    transition: all 0.2s linear;
   }
 
   .active a {
-    font: 700 1.4rem sans-serif;
-    color: ${(props) => props.theme.colors.secundary};
+    font-weight: 700;
   }
 
-  h1 {
-    color: ${(props) => props.theme.colors.secundary};
+  a:not(.active):hover .link-space {
+    transform: translateZ(-1.5rem) rotateX(90deg);
+  }
+
+  .link-space {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    pointer-events: none;
+    transition: all 0.2s ease-out;
+    transform-style: preserve-3d;
+  }
+
+  .fare {
+    transform: rotateX(0deg) translateZ(1.5rem);
+  }
+
+  .back {
+    transform: rotateX(-90deg) translateZ(1.5rem);
+  }
+
+  .fare,
+  .back {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    box-sizing: border-box;
+    margin: auto;
+    padding: 1rem 2rem;
+  }
+
+  nav li a:hover {
+    font-weight: 700;
   }
 `
 
