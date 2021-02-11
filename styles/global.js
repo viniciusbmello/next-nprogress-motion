@@ -35,6 +35,9 @@ const GlobalStyle = createGlobalStyle`
 
   .container {
     overflow: hidden;
+
+    height: 100vh;
+    width: 100vw;
 }
 `
 

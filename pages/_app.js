@@ -35,7 +35,10 @@ const MyApp = ({ Component, pageProps }) => {
           <Particles
             params={{
               particles: {
-                number: { value: 200 },
+                number: {
+                  value: 200,
+                  density: { enable: true, value_area: 1500 }
+                },
                 lineLinked: { enable: false },
                 size: { value: 1 },
                 opacity: { anim: { enable: true, speed: 2, opacity_min: 0.1 } }
